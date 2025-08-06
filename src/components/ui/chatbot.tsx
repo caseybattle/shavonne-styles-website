@@ -240,7 +240,7 @@ export default function Chatbot() {
       </motion.div>
 
       {/* Chat Dialog */}
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      <Dialog open={isOpen} onOpenChange={setIsOpen} modal={true}>
         <DialogContent className="sm:max-w-md h-[600px] p-0 gap-0 overflow-hidden">
           <DialogHeader className="p-4 pb-2 border-b bg-gradient-to-r from-pink-500 to-purple-600">
             <div className="flex items-center justify-between">
