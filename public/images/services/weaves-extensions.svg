@@ -1,0 +1,104 @@
+<svg width="342" height="467" viewBox="0 0 342 467" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Skin tone gradients -->
+    <radialGradient id="skinGradient" cx="0.5" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#D4A574"/>
+      <stop offset="50%" stop-color="#C19660"/>
+      <stop offset="100%" stop-color="#A67C52"/>
+    </radialGradient>
+    
+    <!-- Hair gradients for realistic brown to caramel ombre -->
+    <linearGradient id="hairGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C1810"/>
+      <stop offset="30%" stop-color="#3D2317"/>
+      <stop offset="60%" stop-color="#5D3A26"/>
+      <stop offset="80%" stop-color="#8B5A3C"/>
+      <stop offset="100%" stop-color="#B8956A"/>
+    </linearGradient>
+    
+    <!-- Hair highlight gradient -->
+    <linearGradient id="hairHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A2F1A"/>
+      <stop offset="50%" stop-color="#7A4F32"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+    
+    <!-- Lip gradient -->
+    <linearGradient id="lipGradient" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#E8B4A0"/>
+      <stop offset="100%" stop-color="#D4A574"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="342" height="467" fill="#F8F6F3"/>
+  
+  <!-- Hair back layer (long flowing hair) -->
+  <path d="M50 120 Q30 180 40 250 Q45 320 60 380 Q70 420 85 450 Q120 460 160 455 Q200 450 240 445 Q280 440 300 420 Q310 380 305 340 Q300 300 290 260 Q285 220 275 180 Q270 140 260 120 Q240 100 200 95 Q160 90 120 95 Q80 100 50 120Z" fill="url(#hairGradient)"/>
+  
+  <!-- Additional hair strands for volume -->
+  <path d="M80 130 Q60 200 70 280 Q75 350 90 410 Q100 440 120 460" stroke="url(#hairHighlight)" stroke-width="8" fill="none" opacity="0.7"/>
+  <path d="M280 130 Q300 200 290 280 Q285 350 270 410 Q260 440 240 460" stroke="url(#hairHighlight)" stroke-width="8" fill="none" opacity="0.7"/>
+  
+  <!-- Face -->
+  <ellipse cx="171" cy="180" rx="45" ry="55" fill="url(#skinGradient)"/>
+  
+  <!-- Hair front layers -->
+  <path d="M126 140 Q140 120 171 115 Q202 120 216 140 Q220 160 215 180 Q210 200 200 220 Q190 240 171 245 Q152 240 142 220 Q132 200 127 180 Q122 160 126 140Z" fill="url(#hairGradient)"/>
+  
+  <!-- Side hair pieces -->
+  <path d="M120 160 Q100 170 95 190 Q90 210 95 230 Q100 250 110 270 Q120 290 135 310" stroke="url(#hairGradient)" stroke-width="12" fill="none"/>
+  <path d="M222 160 Q242 170 247 190 Q252 210 247 230 Q242 250 232 270 Q222 290 207 310" stroke="url(#hairGradient)" stroke-width="12" fill="none"/>
+  
+  <!-- Wavy hair texture -->
+  <path d="M140 250 Q160 260 180 250 Q200 240 220 250 Q240 260 260 250" stroke="url(#hairHighlight)" stroke-width="4" fill="none" opacity="0.6"/>
+  <path d="M120 300 Q140 310 160 300 Q180 290 200 300 Q220 310 240 300 Q260 290 280 300" stroke="url(#hairHighlight)" stroke-width="4" fill="none" opacity="0.6"/>
+  <path d="M100 350 Q120 360 140 350 Q160 340 180 350 Q200 360 220 350 Q240 340 260 350" stroke="url(#hairHighlight)" stroke-width="4" fill="none" opacity="0.6"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="158" cy="170" rx="8" ry="6" fill="#2C1810"/>
+  <ellipse cx="184" cy="170" rx="8" ry="6" fill="#2C1810"/>
+  <ellipse cx="160" cy="168" rx="2" ry="2" fill="white"/>
+  <ellipse cx="186" cy="168" rx="2" ry="2" fill="white"/>
+  
+  <!-- Eyebrows -->
+  <path d="M148 160 Q158 158 168 160" stroke="#2C1810" stroke-width="2" fill="none"/>
+  <path d="M174 160 Q184 158 194 160" stroke="#2C1810" stroke-width="2" fill="none"/>
+  
+  <!-- Nose -->
+  <path d="M171 180 Q173 185 171 190" stroke="#B8956A" stroke-width="1.5" fill="none"/>
+  
+  <!-- Lips -->
+  <ellipse cx="171" cy="200" rx="8" ry="4" fill="url(#lipGradient)"/>
+  
+  <!-- Earrings (diamond studs) -->
+  <polygon points="140,175 143,178 140,181 137,178" fill="#E8E8E8" stroke="#CCCCCC" stroke-width="0.5"/>
+  <polygon points="202,175 205,178 202,181 199,178" fill="#E8E8E8" stroke="#CCCCCC" stroke-width="0.5"/>
+  
+  <!-- Hand gesture (touching hair) -->
+  <ellipse cx="130" cy="190" rx="12" ry="8" fill="url(#skinGradient)" transform="rotate(-20 130 190)"/>
+  <ellipse cx="125" cy="185" rx="3" ry="8" fill="url(#skinGradient)" transform="rotate(-30 125 185)"/>
+  <ellipse cx="128" cy="183" rx="3" ry="8" fill="url(#skinGradient)" transform="rotate(-20 128 183)"/>
+  <ellipse cx="131" cy="182" rx="3" ry="8" fill="url(#skinGradient)" transform="rotate(-10 131 182)"/>
+  <ellipse cx="134" cy="183" rx="3" ry="8" fill="url(#skinGradient)" transform="rotate(0 134 183)"/>
+  
+  <!-- Clothing (gray sweater) -->
+  <path d="M120 240 Q140 235 171 235 Q202 235 222 240 Q240 245 250 260 Q255 280 250 300 Q240 320 220 340 Q200 360 171 365 Q142 360 122 340 Q102 320 92 300 Q87 280 92 260 Q102 245 120 240Z" fill="#A8A8A8"/>
+  
+  <!-- Sweater texture -->
+  <path d="M130 250 Q150 248 170 250 Q190 248 210 250" stroke="#909090" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M125 270 Q145 268 165 270 Q185 268 215 270" stroke="#909090" stroke-width="1" fill="none" opacity="0.5"/>
+  
+  <!-- Additional hair volume and waves -->
+  <path d="M60 200 Q80 220 100 240 Q120 260 140 280" stroke="url(#hairGradient)" stroke-width="10" fill="none" opacity="0.8"/>
+  <path d="M282 200 Q262 220 242 240 Q222 260 202 280" stroke="url(#hairGradient)" stroke-width="10" fill="none" opacity="0.8"/>
+  
+  <!-- Long flowing hair ends -->
+  <path d="M85 400 Q105 420 125 440 Q145 455 165 460" stroke="url(#hairHighlight)" stroke-width="6" fill="none" opacity="0.7"/>
+  <path d="M257 400 Q237 420 217 440 Q197 455 177 460" stroke="url(#hairHighlight)" stroke-width="6" fill="none" opacity="0.7"/>
+  
+  <!-- Subtle highlights throughout hair -->
+  <path d="M160 130 Q180 140 200 130 Q220 120 240 130" stroke="#D4A574" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M140 180 Q160 190 180 180 Q200 170 220 180" stroke="#D4A574" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M120 230 Q140 240 160 230 Q180 220 200 230" stroke="#D4A574" stroke-width="2" fill="none" opacity="0.4"/>
+</svg>
