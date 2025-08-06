@@ -5,6 +5,7 @@ import { TRPCReactProvider } from '@/utils/trpc-provider';
 import { Toaster } from '@/components/ui/sonner';
 import { ThemeProvider } from '@/components/providers/theme-provider';
 import SparklingBackground from '@/components/ui/sparkling-background';
+import Chatbot from '@/components/ui/chatbot';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -71,6 +72,7 @@ export default function RootLayout({
             <TRPCReactProvider>
               {children}
               <Toaster />
+              <Chatbot />
             </TRPCReactProvider>
           </div>
         </ThemeProvider>
