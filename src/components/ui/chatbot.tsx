@@ -280,15 +280,8 @@ export default function Chatbot() {
             </div>
           </DialogHeader>
 
-          <AnimatePresence>
-            {!isMinimized && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="flex flex-col flex-1"
-              >
+          {!isMinimized && (
+            <div className="flex flex-col flex-1">
                 {/* Contact Form */}
                 {showContactForm && (
                   <div className="p-4 border-b bg-gray-50 dark:bg-gray-900">
@@ -303,9 +296,16 @@ export default function Chatbot() {
                         <Input
                           id="name"
                           value={contactInfo.name}
-                          onChange={(e) => setContactInfo(prev => ({ ...prev, name: e.target.value }))}
+                          onChange={(e) => {
+                            console.log('Name input changed:', e.target.value);
+                            setContactInfo(prev => ({ ...prev, name: e.target.value }));
+                          }}
+                          onFocus={() => console.log('Name input focused')}
+                          onBlur={() => console.log('Name input blurred')}
                           placeholder="Your name"
                           className="h-8 text-sm"
+                          autoComplete="off"
+                          autoFocus
                         />
                       </div>
                       <div>
@@ -316,9 +316,15 @@ export default function Chatbot() {
                           id="email"
                           type="email"
                           value={contactInfo.email}
-                          onChange={(e) => setContactInfo(prev => ({ ...prev, email: e.target.value }))}
+                          onChange={(e) => {
+                            console.log('Email input changed:', e.target.value);
+                            setContactInfo(prev => ({ ...prev, email: e.target.value }));
+                          }}
+                          onFocus={() => console.log('Email input focused')}
+                          onBlur={() => console.log('Email input blurred')}
                           placeholder="your.email@example.com"
                           className="h-8 text-sm"
+                          autoComplete="off"
                         />
                       </div>
                       <div>
@@ -417,9 +423,8 @@ export default function Chatbot() {
                     </p>
                   </div>
                 )}
-              </motion.div>
-            )}
-          </AnimatePresence>
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </>

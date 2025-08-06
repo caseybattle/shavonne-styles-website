@@ -4,6 +4,7 @@ import { Footer } from '@/components/sections/Footer';
 import { Navbar } from '@/components/navigation/Navbar';
 import { BorderBeam } from '@/components/ui/border-beam';
 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-black">
@@ -269,6 +270,8 @@ export default function Home() {
       
       {/* Navigation */}
       <Navbar />
+      
+
       
       {/* Hero Content */}
       <section className="relative z-10 flex items-center justify-center min-h-screen px-4">
